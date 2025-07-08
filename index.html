@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stopwatch App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Stopwatch App</h1>
+    <div id="timers">
+      <div class="timer">
+        <span class="label">Active Time:</span>
+        <span id="active-time">00:00:00.00</span>
+      </div>
+      <div class="timer">
+        <span class="label">Recovery Time:</span>
+        <span id="recovery-time">00:00:00.00</span>
+      </div>
+    </div>
+    <div id="controls">
+      <button id="toggle-button">Start</button>
+      <button id="stop-button" disabled>Stop</button>
+    </div>
+    <div id="splits">
+      <h2>Splits</h2>
+      <ul id="splits-list"></ul>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
